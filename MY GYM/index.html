@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prince fitness</title>
+</head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Chela+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+    body {
+        font-family: 'Chela One', cursive;
+        margin: 0px;
+        padding: 0px;
+        background: url('CSS/box-1514845_1920.jpg') no-repeat;
+        background-size: cover;
+        color: white;
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        top: 20px;
+        left: 50px;
+    }
+
+    .mid {
+        display: block;
+        width: 50%;
+        margin: 20px auto;
+        /* border: 2px solid white;
+        border-radius: 10px; */
+    }
+
+    .right {
+        display: inline-block;
+        position: absolute;
+        top: 28px;
+        right: 33px;
+        /* border: 2px solid yellow; */
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+
+    }
+
+    .navbar li a {
+        color: white;
+        padding: 34px 23px;
+        text-decoration: none;
+
+    }
+
+    .navbar li a:hover,
+    .navbar li a:active {
+
+        text-decoration: underline;
+        color: rgb(187, 184, 184);
+
+    }
+
+    .left img {
+        width: 33px;
+        filter: invert(100%);
+        display: block;
+        margin: 0px auto;
+    }
+
+    .left div {
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .btn {
+        margin: 0px 9px;
+        background-color: black;
+        color: blanchedalmond;
+        border: 2px solid rgb(172, 169, 169);
+        border-radius: 8px;
+        padding: 4px 14px;
+        cursor: pointer;
+
+    }
+
+    .btn:hover {
+        background-color: gray;
+    }
+
+    .container {
+        border: 2px solid white;
+        margin: 99px 76px;
+        padding: 58px 44px;
+        width: 46%;
+        border-radius: 23px;
+    }
+
+    .container h1 {
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+    }
+
+    .form-group input {
+        text-align: center;
+        font-family: 'Chela One', cursive;
+        display: block;
+        width: 500px;
+        padding: 6px;
+        margin: 10px auto;
+    }
+
+    .container button {
+        display: block;
+        width: 23%;
+        margin: auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="CSS/weightlift.png" alt="">
+            <div>RANA'S ABODE</div>
+        </div>
+        <!-- mid for navigation bar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">FITNESS CALCULATOR</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">CALL US</button>
+            <button class="btn">EMAIL US</button>
+
+        </div>
+
+    </header>
+    <div class="container">
+        <h1>JOIN THE BEST GYM IN DELHI NOW !! </h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Enter your NAME">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your AGE">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your GENDER">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your LOCALITY">
+            </div>
+            <button class="btn">SUBMIT</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
