@@ -102,6 +102,8 @@ body{
     background: var(--heaven);
     position: absolute;
     z-index: 2;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
     transition: all .5s ease;
 }
 
@@ -127,9 +129,12 @@ body{
 } */
 
 .scaled{
-    transform: scale(0.9) translateX(90%);
+    -webkit-transform: scale(0.9) translateX(90%);
+        -ms-transform: scale(0.9) translateX(90%);
+            transform: scale(0.9) translateX(90%);
     border-radius: 3px;
-    box-shadow:0 3px 10px 0 var(--secondary) ;
+    -webkit-box-shadow:0 3px 10px 0 var(--secondary) ;
+            box-shadow:0 3px 10px 0 var(--secondary) ;
 }
 
 .site-content{
@@ -522,8 +527,8 @@ section.our-services .service-card p{
 
 /* --------------------------big Deal--------------------------- */
 section.big-deal{
-    background: -webkit-gradient(linear,left top, left bottom,from(rgba(35,43,56,0.7)),to(rgba(35,43,56,0.7))), url(images/food-table.jpg);
     background: -o-linear-gradient(rgba(35,43,56,0.7),rgba(35,43,56,0.7)), url(images/food-table.jpg);
+    background: -webkit-gradient(linear,left top, left bottom,from(rgba(35,43,56,0.7)),to(rgba(35,43,56,0.7))), url(images/food-table.jpg);
     background: linear-gradient(rgba(35,43,56,0.7),rgba(35,43,56,0.7)), url(images/food-table.jpg);
     background-size: cover;
     background-position: center;
@@ -751,26 +756,36 @@ footer{
 }
 
 footer .container{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     color: var(--pure);
 }
 
 footer .box{
-    flex: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     margin-right: 2rem;
     text-align: center;
 }
 
 footer .instagram-api img{
     width: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     height: 100%;
 }
 
 footer .instagram-api .post-wrap{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 /* -------- */
 footer .instagram-api .post-wrap>div{
@@ -787,6 +802,8 @@ footer .box ul li{
 footer .box ul li a{
    color: var(--pure);
    text-decoration: none;
+   -webkit-transition: all .3s ease;
+   -o-transition: all .3s ease;
    transition: all .3s ease;
 }
 
@@ -807,8 +824,12 @@ footer .box p{
 }
 
 footer .box:nth-child(3)>div{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 footer .box:nth-child(3){
@@ -928,7 +949,10 @@ footer.copyright a{
     }
 
     .latest-news .article-wrapper{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     .latest-news .article-wrapper .card{
@@ -944,7 +968,10 @@ footer.copyright a{
 
 @media (max-width:768px){
     .about-meal .about-meal-wrap{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     .about-meal .about-meal-wrap img{
@@ -953,7 +980,10 @@ footer.copyright a{
     }
 
     section.our-services .card-wrapper{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     section.our-services .card-wrapper .service-card{
@@ -961,7 +991,10 @@ footer.copyright a{
     }
 
     footer .container{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     footer .box{
@@ -1003,7 +1036,10 @@ footer.copyright a{
     }
 
     section.subscribe .container{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         padding: .50rem;
     }
 
@@ -1013,6 +1049,12 @@ footer.copyright a{
 
     section.contact-us {
       
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+      
+        -webkit-box-direction: normal;
+      
+            -ms-flex-direction: column;
+      
+                flex-direction: column;
     }
 }

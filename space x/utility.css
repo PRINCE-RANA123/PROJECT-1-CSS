@@ -1,0 +1,43 @@
+.container{
+    width: 1200px;
+    /* max-width: 90%; */
+    /* border: 2px solid red; */
+    max-width: 1152px;
+    margin: 0 auto;
+}
+
+.btn{
+    padding: 8px 30px;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    outline: none;
+    font-size: 15px;
+    transition: all .5s ease-in-out;
+}
+
+.btn-primary{
+    color: var(--dark);
+    background: var(--pure);
+    
+
+}
+
+
+.btn-primary:hover{
+    background: transparent;
+    color: var(--pure);
+    border-color: var(--pure);
+    cursor: pointer;
+}
+
+.btn-secondary{
+    background: transparent;
+    color: var(--pure);
+    border-color: var(--pure);
+
+}
+
+.btn-secondary:hover{
+    background: var(--pure);
+    color: var(--dark);
+}
